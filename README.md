@@ -58,8 +58,7 @@ Your objective is to create a robust and maintainable Airflow DAG that achieves 
     3. Integrate Swagger documentation for the APIs.
     4. Implement the logic to interact with Airflow for DAG operations.
     5. Dockerize the microservice.
-    6. Deploy the microservice to a hosting platform.
-    7. Test, debug, and document your code.
+    6. Test, debug, and document your code.
 
 ## Evaluation Criteria:
 Your solution will be evaluated based on the criteria outlined in the initial assessment.
