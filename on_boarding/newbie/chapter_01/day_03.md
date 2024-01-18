@@ -1,4 +1,4 @@
-# Day 1 - Introduction to Data concept & Hadoop Ecosystem :elephant:
+# Day 03 - Introduction to Data concept & Hadoop Ecosystem :elephant:
 
 ## Goals:
 - Gain a foundational understanding of the Hadoop ecosystem.

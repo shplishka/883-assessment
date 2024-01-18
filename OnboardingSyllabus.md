@@ -1,12 +1,22 @@
-# 883 Team Onboarding Syllabus
+# 883 Mador Onboarding Syllabus
 
-## Week 1: Introduction to Data Ops and Hadoop Ecosystem
-- **Chapter 1:** Overview of Data Ops in the Modern Data Landscape
-- **Chapter 2:** Deep Dive into Hadoop Ecosystem Components (Hive, Oozie, HDFS, YARN, Impala)
-- **Exercise:** Set up a local Hadoop cluster for hands-on experience in Cloudera Cloud Platform.
-- **Showcase:** Explain the core concept of Hadoop ecosystem components.
 
-## Week 2: Proficiency in Spark
+## Chapter 00: Foundations of Data Operations and Customer Engagement in the 883 Group
+
+In this chapter, the new team member will gain insights into the mission and strategic objectives of the group, engage with key customers, and grasp the fundamental data concepts pivotal to the unit.
+- **[Day 00](./on_boarding/newbie/chepter_00/day_00.md):** Welcome & Introduction -  Understand the onboarding process and the 883 Group's vision and mission :dart:
+- **[Day 01](./on_boarding/newbie/chepter_00/day_01.md)** Introduction to Big Data - Core Concepts 
+- **[Day 02](./on_boarding/newbie/chepter_00/day_02.md):** Customer Interaction and Insight into Data Operations & Data Lifecycle in the 883 Group
+:bow_and_arrow:
+
+
+## Chapter 01: Introduction to Hadoop Ecosystem
+- **[Day 03](./on_boarding/newbie/chepter_01/day_03.md):**  Introduction to Data concept & Hadoop Ecosystem (Hadoop, HDFS, MapReduce, YARN, Hive):elephant:
+- **[Day 04](./on_boarding/newbie/chepter_01/day_04.md):**  Introduction to Data concept & Hadoop Ecosystem (HBase, Spark, Kafka, Impala, Partitioning, Kerberos, Oozie):elephant::elephant:
+- **[Final Exercise](./on_boarding/newbie/chepter_01/final_exercise_01.md):** Introduction to Data Ops Team and Hadoop Ecosystem concepts Q&A :question:
+- **[Showcase](./on_boarding/newbie/chepter_01/showcase/showcase01.md):** In-Depth Exploration of Hadoop Ecosystem Component(s) :book:
+
+## chapter 2: Proficiency in Spark
 
 - **Chapter 3:** Spark Essentials and Best Practices
 In this chapter, we will delve into the fundamental concepts of Apache Spark. Topics covered will include:
@@ -27,7 +37,7 @@ Optimizing Spark jobs is essential for efficient data processing. During the sho
     - Strategies for handling large datasets and improving job performance.
 
 
-## Week 3: Mastering Apache Airflow for Workflow Orchestration
+## chapter 3: Mastering Apache Airflow for Workflow Orchestration
 
 - **Chapter 4:** Mastering Apache Airflow for Workflow Orchestration
 This chapter focuses on mastering Apache Airflow, an open-source platform to programmatically author, schedule, and monitor workflows. Topics covered include:
@@ -53,43 +63,43 @@ During the showcase, we will dive deeper into Airflow DAGs, discussing:
     - Monitoring and logging capabilities in Airflow.
 
 
-## Week 4: DevOps in Kubernetes
-- **Chapter 5:** Kubernetes Fundamentals for Data Ops using "zero to hero" Openshift labs.
-- **Chapter 6:** Helm for Kubernetes Package Management using "Advenced labs" Openshift labs.
+## chapter 02: Basic DevOps & Openshift
+- **Chapter 5:** Openshift Fundamentals for Data Ops using "zero to hero" Openshift labs.
+- **Chapter 6:** Helm for Kubernetes Package Management using "Hero to Master" Openshift labs.
 - **Exercise:** Deploy a Spark application using Helm on a Openshift cluster.
 - **Showcase:** Present the advantages of Kubernetes in a data ops context and discuss Helm's role in managing Kubernetes applications.
 
-## Week 5: Iceberg and Trino in Data Operations
+## chapter 5: Iceberg and Trino in Data Operations
 - **Chapter 7:** Managing Data with Iceberg
 - **Chapter 8:** Exploring Trino as a Query Engine
 - **Exercise:** Implement Iceberg for data management and work with Trino for querying data efficiently - create mini parquet merager.
 - **Showcase:** Showcase the benefits of using Iceberg for managing evolving datasets and discuss Trino's advantages as a query engine.
 
-## Week 6: Operators and Controllers in Kubernetes
+## chapter 6: Operators and Controllers in Kubernetes
 - **Chapter 9:** Understanding Kubernetes Operators
 - **Chapter 10:** Custom Controllers for Data Ops
 - **Exercise:** Develop a custom Kubernetes controller to handle ConfigMap upgrades in given namespaces.
 - **Showcase:** Explain the concept of Kubernetes operators and their role VS contorllers.
 
-## Week 7: Real-world Project Simulation
+## chapter 7: Real-world Project Simulation
 - **Chapter 11:** Simulating Real-world Data Ops Projects
 - **Chapter 12:** Troubleshooting and Debugging Techniques
 - **Exercise:**  Do [Final Exercise](FinalExercise.md) and present the solution.
 - **Showcase:** Share insights gained from the simulation and discuss troubleshooting strategies.
 
-## Week 8: Best Practices and Spark Optimization
+## chapter 8: Best Practices and Spark Optimization
 - **Chapter 13:** Best Practices and Spark Optimization in Spark metrics and Spark ui analysis
 - **Chapter 14:** Performance Spark Optimization Strategies
 - **Exercise:** Optimize a Spark job for better performance and efficiency.
 - **Showcase:** Present the optimized Spark job and discuss the strategies employed for performance improvement.
 
-## Week 9: Advanced Airflow Concepts and Practical Implementation
+## chapter 9: Advanced Airflow Concepts and Practical Implementation
 - **Chapter 15:** Airflow Cluster Setup and Configuration
 - **Chapter 16:** Writing Custom Airflow Operators
 - **Exercise:** Set up an Airflow cluster and write a custom operator to interact with an external system.
 - **Showcase:** Demonstrate the configured Airflow cluster and showcase the custom operator in action.
 
-## Week 10: Documentation and Knowledge Sharing
+## chapter 10: Documentation and Knowledge Sharing
 - **Chapter 17:** Importance of Documentation in Data Ops
 - **Chapter 18:** Effective Knowledge Sharing within the Team
 - **Exercise:** Create documentation for a sample project and present it to the team.

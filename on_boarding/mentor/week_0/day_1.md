@@ -1,4 +1,6 @@
-# Q&A: Introduction to Hadoop Ecosystem
+# Day 0-3 - Introduction to Data concept & Hadoop Ecosystem :elephant:
+
+## Q&A: Introduction to Hadoop Ecosystem
 
 ### Chapter 1: Introduction to Big Data and Hadoop
 
@@ -184,3 +186,38 @@
 50. **Q:** How is datetime-based partitioning used in real-world scenarios?  
     **A:** Datetime-based partitioning is used to organize and manage time-series data efficiently, like financial transactions or event logs, allowing for faster access and analysis of data based on time intervals.
 
+### Chapter 12: Oozie Workflow Scheduler
+
+1. **Q:** What is Apache Oozie, and how does it facilitate job scheduling and workflow management in a Hadoop environment?
+   
+   **A:** Apache Oozie is a server-based workflow scheduling system to manage Hadoop jobs. It facilitates job scheduling by allowing users to define complex, multi-stage workflows (comprised of jobs like MapReduce, Pig, Hive) in XML. Oozie manages and coordinates these jobs, ensuring they are executed in the correct sequence and managing inter-job dependencies. This allows for automated, reliable management of data processing tasks in a Hadoop environment.
+
+2. **Q:** Can you differentiate between an Oozie Workflow job and a Coordinator job? Provide an example of when you would use each.
+   
+   **A:** An Oozie Workflow job is a sequence of actions (tasks) arranged to accomplish a specific data processing task. It's used for jobs that need to be executed once or manually. 
+   An Oozie Coordinator job is a more complex structure that schedules Workflow jobs based on time (such as every hour or every day) or data availability (such as when new data is added to HDFS). 
+   For example, you would use a Workflow job to process logs once. If you need to process logs every time new log data is available, you would use a Coordinator job.
+
+3. **Q:** Describe the lifecycle of an Oozie job. What are the typical states an Oozie job can be in, and what are the implications of each state?
+   
+   **A:** The typical states of an Oozie job are:
+      - **PREP:** The job is being set up.
+      - **RUNNING:** The job is in progress.
+      - **SUCCEEDED:** The job has completed successfully.
+      - **KILLED:** The job was terminated before completion.
+      - **FAILED:** The job has failed to complete successfully.
+   The implications are straightforward: a job in PREP is about to run, RUNNING is currently being processed, SUCCEEDED indicates successful completion, KILLED indicates a user or system intervention, and FAILED indicates an issue that needs attention.
+
+4. **Q:** How does Oozie support SLA (Service Level Agreement) monitoring, and why is it important in managing data processing jobs?
+   
+   **A:** Oozie supports SLA monitoring by allowing users to specify time-based criteria for job completion. This includes expected start times, completion times, and duration. Notifications can be set up to alert when these criteria are not met. SLA monitoring is crucial for ensuring timely data processing, especially in systems where downstream processes are dependent on the timely execution of earlier jobs. It helps in maintaining performance standards and identifying jobs that require optimization or troubleshooting.
+
+5. **Q:** What are the main components of an Oozie Workflow job, and what is the role of each component?
+   
+   **A:** The main components of an Oozie Workflow job are:
+      - **Control Nodes:** Define the flow of the job, manage the execution between actions, and include nodes like start, end, fork, join, and decision.
+      - **Action Nodes:** Represent the tasks that Oozie executes. Each action node invokes a particular processing service, like MapReduce, Pig, or Hive.
+      - **Workflow.xml:** The XML file where the Workflow job is defined. It includes the action nodes, control flow nodes, and their configuration.
+      - **Job.properties:** A file that contains properties and values required by the workflow.xml, like name-node and job-tracker addresses, and input/output directories.
+   
+   These components work together to define, configure, and manage the execution of tasks in a Hadoop environment.

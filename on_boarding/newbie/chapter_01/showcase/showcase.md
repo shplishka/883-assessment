@@ -1,5 +1,5 @@
 
-# Final Exercise: In-Depth Exploration of Hadoop Ecosystem Component(s) :book:
+# ShowCase: In-Depth Exploration of Hadoop Ecosystem Component(s) :book:
 
 **Est. Time:** 8 hours
 

@@ -1,4 +1,4 @@
-# Day 3 - Introduction to Data concept & Hadoop Ecosystem & Research assignment :elephant::elephant::elephant:
+# Final Exercise Introduction Hadoop Ecosystem concepts Q&A :question:
 
 ## Goals:
 - Gain a foundational understanding of the Hadoop ecosystem.
@@ -101,14 +101,26 @@
 ### Chapter 11: Kerberos Authentication
 Certainly, here are the questions in markdown format:
 
-1. **Q1:** What is the primary purpose of the Key Distribution Center (KDC) in the Kerberos authentication system, and what are its two main components?
+46. **Q1:** What is the primary purpose of the Key Distribution Center (KDC) in the Kerberos authentication system, and what are its two main components?
 
-2. **Q2:** How does the "kinit" command contribute to the Kerberos authentication process, and what does it allow users to obtain?
+47. **Q2:** How does the "kinit" command contribute to the Kerberos authentication process, and what does it allow users to obtain?
 
-3. **Q3:** Explain the concept of "Single Sign-On (SSO)" in the context of Kerberos authentication and its benefits for users.
+48. **Q3:** Explain the concept of "Single Sign-On (SSO)" in the context of Kerberos authentication and its benefits for users.
 
-4. **Q4:** Why is the concept of "time sensitivity" important in Kerberos authentication, and how does it enhance security?
+49. **Q4:** Why is the concept of "time sensitivity" important in Kerberos authentication, and how does it enhance security?
 
-5. **Q5:** In what real-world scenarios or use cases is Kerberos authentication commonly employed, and how does it contribute to security and ease of use in those contexts?
+50. **Q5:** In what real-world scenarios or use cases is Kerberos authentication commonly employed, and how does it contribute to security and ease of use in those contexts?
 
 You can copy and paste these questions into your markdown document.
+
+### Chapter 12: Oozie Workflow Scheduler
+
+51. **Q:** What is Apache Oozie, and how does it facilitate job scheduling and workflow management in a Hadoop environment?
+
+52. **Q:** Can you differentiate between an Oozie Workflow job and a Coordinator job? Provide an example of when you would use each.
+
+53. **Q:** Describe the lifecycle of an Oozie job. What are the typical states an Oozie job can be in, and what are the implications of each state?
+
+54. **Q:** How does Oozie support SLA (Service Level Agreement) monitoring, and why is it important in managing data processing jobs?
+
+55. **Q:** What are the main components of an Oozie Workflow job, and what is the role of each component?

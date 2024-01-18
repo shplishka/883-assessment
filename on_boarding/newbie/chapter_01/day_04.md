@@ -1,4 +1,4 @@
-# Day 2 - Introduction to Data concept & Hadoop Ecosystem & Research assignment :elephant::elephant:
+# Day 04 - Introduction to Data concept & Hadoop Ecosystem :elephant::elephant:
 
 ## Goals:
 - Gain a foundational understanding of the Hadoop ecosystem.
@@ -15,6 +15,7 @@
 and tasks, and try to stick to your plan. If you are not able to finish the tasks in the time you have planned, you should discuss it with your mentor, maybe you learn more then you should.
 
 **Total Time:** 8.5 hours
+
 
 ## Chapter 6: Apache HBase
 **Est. Time:** 1.5 hours
@@ -363,4 +364,66 @@ klist
    - The encryption and time-sensitive nature of Kerberos tickets provide robust security for protecting sensitive data during transmission and access.
 
 In summary, Kerberos authentication is a robust and widely-used protocol for securing network communication, ensuring strong authentication, encryption, and Single Sign-On capabilities in various real-world applications. The `kinit` and `klist` commands are essential tools for managing Kerberos tickets and authenticating users.
+
+
+## Chapter 12: Oozie Workflow Scheduler
+**Est. Time: 1.5 hours**
+
+### Core Concepts
+#### 1. **Oozie Overview:**
+   - Apache Oozie is a workflow scheduler for Hadoop systems. It is used to manage and coordinate complex workflows of jobs, such as Hadoop MapReduce, Pig, Hive jobs, and more.
+
+#### 2. **Workflow:**
+   - An Oozie Workflow is a collection of actions (jobs) arranged in a directed acyclic graph (DAG). Workflows define the sequence of jobs to be executed.
+
+#### 3. **Coordinator:**
+   - An Oozie Coordinator job is a higher-level abstraction that allows the management of recurrent Workflow jobs triggered by time (frequency) and data availability.
+
+#### 4. **Bundle:**
+   - An Oozie Bundle provides a way to package multiple Coordinator and Workflow jobs and manage their lifecycle together.
+
+#### 5. **Action Node:**
+   - In an Oozie workflow, an action node represents a workflow task, like running a MapReduce job, executing a Hive script, or running a Pig script.
+
+#### 6. **Control Node:**
+   - Control nodes in Oozie workflows manage the workflow execution path with nodes for defining the start and end of a workflow and decision, fork, and join nodes for controlling the workflow execution flow.
+
+#### 7. **Job Properties:**
+   - Oozie jobs are configured with properties files, which are XML files containing job-specific parameters and settings.
+
+#### 8. **Application Master:**
+   - Oozie uses YARN’s Application Master to manage the lifecycle of a workflow. Each Oozie workflow job is a YARN application.
+
+#### 9. **SLA Monitoring:**
+   - Oozie supports Service Level Agreement (SLA) monitoring for jobs, allowing users to track the progress and performance of their workflows against predefined SLAs.
+
+### Oozie Commands
+
+#### `oozie job` - Oozie Job Operations
+The `oozie job` command is used to perform job operations such as running, starting, suspending, resuming, and killing Oozie Workflow, Coordinator, or Bundle jobs.
+
+**Usage:**
+~~~
+oozie job -oozie <oozie_URL> -config <job.properties> -run
+~~~
+
+
+### Real-World Use Cases
+1. **Complex Data Pipelines:**
+   - Oozie is used to schedule and manage complex data processing pipelines involving multiple stages and dependencies, ensuring that jobs are executed in the correct order.
+
+2. **Recurring Jobs:**
+   - With Oozie's Coordinator jobs, organizations can manage recurring jobs, ensuring that data processing tasks are performed at regular intervals or triggered by data availability.
+
+3. **Resource Management:**
+   - Oozie integrates with YARN to ensure efficient resource allocation and management for Hadoop jobs, optimizing cluster resource usage.
+
+4. **SLA Compliance:**
+   - Oozie’s SLA feature allows organizations to monitor and enforce service level agreements, ensuring that data processing jobs meet performance expectations.
+
+5. **Scalability and Reliability:**
+   - Oozie's robust architecture allows it to manage a large number of jobs reliably, making it suitable for enterprise-scale data processing.
+
+Oozie's integration with the Hadoop stack, its ability to manage complex workflows, and its support for SLA monitoring make it an essential tool for efficient and reliable data processing and job scheduling in Hadoop ecosystems.
+
 

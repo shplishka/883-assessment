@@ -1,18 +1,9 @@
-# Day 0: Welcome & Introduction to Data Core Concepts :baby:
+# Day 01: Introduction to Data Core Concepts :baby:
 ## Overview 
    **Goals:** : 
-   - Familiarize yourself with your mantor and the onboarding process.
    - Understand the data landscape and core concepts
 
-   **Total Time** : 6 hours
-   - 1 of welcome and intro discussion with the mentor
-   - 4 of self-study
-   - 1 of quostions and discussion about the concept list with the mentor
-## I. Welcome and Introduction - By Mentor
-   - Brief introduction about the team aims and goals, what is data infrastructure, and what is the role of a data infrastructure engineer.
-   - Overview of the onboarding process - syllabus, work hours and exceptions (holidays, etc.)
-
-## II. Understanding the Data Landscape
+## Chapter 1. Understanding the Data Landscape
 Explore the following concepts by conducting web research to find real-world examples for each. Once you've gathered information of all conceptes, Engage in a discussion with your mentor to deepen your understanding and clarify any questions you may have, all while maintaining a high-level perspective.
 
 1. **5V's of Big Data**
