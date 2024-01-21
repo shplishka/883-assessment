@@ -90,7 +90,26 @@ Hadoop Distributed File System (HDFS) is a foundational component of the Hadoop 
 - HDFS supports snapshots for creating point-in-time copies of a directory or the entire file system.
 - Useful for data recovery, testing, and backup purposes.
 
-#### 9. HDFS Deep Dive
+#### 9. JournalNode
+  - In HDFS High Availability (HA) configurations, JournalNodes are integral for synchronizing the file system metadata between Active and Standby NameNodes. They maintain a shared edit log, ensuring that any changes made by the Active NameNode are quickly replicated to the Standby NameNode.
+  - The Active NameNode records each metadata change to multiple JournalNodes (forming a quorum) for fault tolerance. This approach ensures that the Standby NameNode can seamlessly transition to an Active role if needed, providing robustness against failures.
+  - The deployment of JournalNodes is crucial and should be strategically planned to ensure network reliability and reduce the risk of simultaneous failures, thus maintaining the high availability and integrity of the HDFS namespace.
+
+  #### 10. NameService
+  - The NameService in HDFS is a logical grouping of NameNodes in a federated setup. It facilitates the use of multiple NameNodes in the cluster, each managing a distinct namespace volume.
+  - NameServices allow for horizontal scalability of the namespace, as additional NameNodes can be added to handle more files and directories.
+  - Each NameService is configured with one or more NameNodes for redundancy and high availability, ensuring the file system's resilience and reliability.
+
+#### 11. Block Report
+  - Block Reports are periodic messages sent by DataNodes to the NameNode. These reports contain a list of all blocks on a DataNode, allowing the NameNode to keep its block mapping up-to-date.
+  - Block Reports are crucial for maintaining the integrity of the file system, enabling the NameNode to identify missing blocks and initiate necessary replication to maintain the desired level of redundancy.
+
+#### 12. RPC Requests
+  - Remote Procedure Call (RPC) requests in HDFS are used for communication between the NameNode, DataNodes, and clients. They facilitate operations like opening files, creating directories, renaming files, and replicating or deleting blocks.
+  - RPC ensures a standardized method of communication across the distributed components of HDFS, providing a seamless operational experience and ensuring the efficiency and reliability of the file system's operations.
+  
+
+#### 10. HDFS Deep Dive
 - [HDFS Deep Dive](./deep_dive/HDFS.md)
 ### Real-World Examples:
 
@@ -261,4 +280,68 @@ These examples demonstrate how Apache Hadoop YARN plays a pivotal role in divers
 - **Data Warehousing:** Hive is widely used for large-scale data warehousing tasks, enabling users to perform analytics on vast datasets.
 - **ETL (Extract, Transform, Load):** Used for preprocessing and transforming raw data into a structured format.
 - **Ad Hoc Querying:** Provides a familiar SQL-like interface for users to run ad hoc queries on Hadoop data.
+- **Hive on Text:** Hive can be used to process and analyze text data, including log files and social media data.
+To process and analyze text data in Hive, follow these steps:
+   - Define Tables: Create Hive tables that match your text data structure.
+   - Choose SerDe: Specify a Serializer/Deserializer (SerDe) for parsing text.
+   - Load Data: Use LOAD DATA to import text data into Hive tables.
+   - Query: Run HiveQL queries for text analysis, utilizing built-in functions.
+   - Store Results: Save results in Hive or export as required.
 
+## Chapter 6: Apache ZooKeeper
+**Est. Time:** 2 hours
+- [Apache ZooKeeper](https://zookeeper.apache.org/)
+
+Apache ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. It's an essential component in distributed systems, often used in Hadoop ecosystems to coordinate and manage servers effectively.
+
+### Core Concepts
+
+#### 1. Coordination and Configuration Management
+- **ZooKeeper:**
+  - Provides a reliable, fast, and simple coordination service for distributed applications.
+  - Manages common data in a centralized manner, which allows distributed nodes to coordinate with each other.
+
+#### 2. Znodes - Data Nodes
+- ZooKeeper's data model consists of znodes, which are similar to files and directories. Each znode can store data and have children.
+- Znodes maintain a stat structure that includes version numbers for data changes, ACL changes, and timestamps to facilitate cache validations.
+
+#### 3. Watches
+- Clients can set watches on znodes. A watch will be triggered and a notification sent to the client if the znode changes.
+- Watches are a simple mechanism that allows clients to get notified of changes without polling.
+
+#### 4. Consistency
+- Ensures a highly reliable data registry for distributed systems.
+- Data is replicated over a set of hosts and all interactions happen in the primary server to maintain a consistent data model.
+
+#### 5. Sessions
+- Clients connect to ZooKeeper servers using sessions. Sessions are maintained by heartbeats (pings); if a heartbeat is not received within the specified time, the session is considered dead.
+
+#### 6. Atomicity
+- Operations in ZooKeeper are atomic. Either an operation is successfully executed, or no change is made to the state of the system.
+
+#### 7. Ephemeral Nodes
+- ZooKeeper supports the creation of ephemeral nodes which exist as long as the session that created them is active.
+- Useful for locks and leader election in distributed systems.
+
+#### 8. Sequence Nodes
+- ZooKeeper can create sequence znodes which are automatically assigned a unique monotonic increasing number.
+- Useful for implementing primitives like distributed counters.
+
+### Real-World Examples:
+
+#### 1. **Service Discovery in Microservices Architectures:**
+   - *Use Case:* In a microservices architecture, ZooKeeper can be used for service discovery. Each service registers its address in ZooKeeper, and clients use ZooKeeper to look up the addresses dynamically, allowing for loose coupling and easy scaling.
+
+#### 2. **Configuration Management:**
+   - *Use Case:* Centralized configuration management allows distributed systems to change their behavior dynamically. Systems read configuration data from ZooKeeper and get notified instantly about the changes, ensuring consistency across the cluster.
+
+#### 3. **Leader Election:**
+   - *Use Case:* In distributed systems, leader election is essential for deciding the primary server. ZooKeeper's ephemeral and sequence nodes can be used to implement a robust leader election algorithm.
+
+#### 4. **Distributed Locks:**
+   - *Use Case:* ZooKeeper can be used to implement distributed locks that are essential for ensuring that only one node is executing a critical section of code at any point in time.
+
+#### 5. **Cluster Management:**
+   - *Use Case:* ZooKeeper is often used in distributed systems for cluster management. It can monitor the nodes joining and leaving the cluster dynamically and trigger necessary actions based on the cluster state changes.
+
+ZooKeeper's ability to coordinate between nodes in a distributed system makes it an indispensable tool in complex, large-scale applications. It provides a simple interface to a powerful coordination mechanism, simplifying the development of distributed applications.

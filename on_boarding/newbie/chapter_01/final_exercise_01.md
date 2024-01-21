@@ -59,21 +59,21 @@
 24. **Q:** What are partitions in Hive?
 25. **Q:** Can you define SerDe in the context of Hive?
 
-### Chapter 6: Apache HBase
+### Chapter 6: Apache ZooKeeper
 
-26. **Q:** What is Apache HBase?
-27. **Q:** What is a Row Key in HBase?
-28. **Q:** What is a Column Family in HBase?
-29. **Q:** How does HBase ensure data availability and fault tolerance?
-30. **Q:** What is the role of ZooKeeper in an HBase environment?
+26. **Q:** What is Apache ZooKeeper and what role does it play in a distributed environment?
+27. **Q:** Can you explain the concept of znodes in ZooKeeper?
+28. **Q:** How does ZooKeeper handle coordination and configuration management across distributed systems?
+29. **Q:** What are ephemeral nodes and sequence nodes in ZooKeeper, and how are they used?
+30. **Q:** How does ZooKeeper ensure data consistency and reliability across distributed nodes?
 
-### Chapter 7: Apache Spark
+### Chapter 7: Apache HBase
 
-31. **Q:** What is Apache Spark?
-32. **Q:** What are RDDs in Spark?
-33. **Q:** What are Transformations and Actions in Spark?
-34. **Q:** What is Lazy Evaluation in Spark?
-35. **Q:** Can you explain the role of Executors in Spark?
+31. **Q:** What is Apache HBase?
+32. **Q:** What is a Row Key in HBase?
+33. **Q:** What is a Column Family in HBase?
+34. **Q:** How does HBase ensure data availability and fault tolerance?
+35. **Q:** What is the role of ZooKeeper in an HBase environment?
 
 ### Chapter 8: Apache Kafka
 
@@ -83,44 +83,34 @@
 39. **Q:** What is the role of a Broker in Kafka?
 40. **Q:** What is the difference between a Kafka Producer and a Consumer?
 
-### Chapter 9: Apache Impala
+### Chapter 10: Apache Impala
+
 41. **Q:** What is Apache Impala?
 42. **Q:** What is an Impala Daemon?
 43. **Q:** What is the role of a Catalog Service in Impala?
 44. **Q:** What is the role of a Query Coordinator in Impala?
 45. **Q:** What is the difference between Refresh and Invalidate in Impala?
 
-### Chapter 10: Partitioning
+### Chapter 11: Partitioning
 
-41. **Q:** What is Partitioning in databases and data storage?
-42. **Q:** What are some common partitioning criteria?
-43. **Q:** What is a Partition Key?
-44. **Q:** Can you explain Partition Pruning?
-45. **Q:** How is datetime-based partitioning used in real-world scenarios?
+46. **Q:** What is Partitioning in databases and data storage?
+47. **Q:** What are some common partitioning criteria?
+48. **Q:** What is a Partition Key?
+49. **Q:** Can you explain Partition Pruning?
+50. **Q:** How is datetime-based partitioning used in real-world scenarios?
 
-### Chapter 11: Kerberos Authentication
-Certainly, here are the questions in markdown format:
+### Chapter 12: Kerberos Authentication
 
-46. **Q1:** What is the primary purpose of the Key Distribution Center (KDC) in the Kerberos authentication system, and what are its two main components?
+51. **Q:** What is the primary purpose of the Key Distribution Center (KDC) in the Kerberos authentication system, and what are its two main components?
+52. **Q:** How does the "kinit" command contribute to the Kerberos authentication process, and what does it allow users to obtain?
+53. **Q:** Explain the concept of "Single Sign-On (SSO)" in the context of Kerberos authentication and its benefits for users.
+54. **Q:** Why is the concept of "time sensitivity" important in Kerberos authentication, and how does it enhance security?
+55. **Q:** In what real-world scenarios or use cases is Kerberos authentication commonly employed, and how does it contribute to security and ease of use in those contexts?
 
-47. **Q2:** How does the "kinit" command contribute to the Kerberos authentication process, and what does it allow users to obtain?
+### Chapter 13: Oozie Workflow Scheduler
 
-48. **Q3:** Explain the concept of "Single Sign-On (SSO)" in the context of Kerberos authentication and its benefits for users.
-
-49. **Q4:** Why is the concept of "time sensitivity" important in Kerberos authentication, and how does it enhance security?
-
-50. **Q5:** In what real-world scenarios or use cases is Kerberos authentication commonly employed, and how does it contribute to security and ease of use in those contexts?
-
-You can copy and paste these questions into your markdown document.
-
-### Chapter 12: Oozie Workflow Scheduler
-
-51. **Q:** What is Apache Oozie, and how does it facilitate job scheduling and workflow management in a Hadoop environment?
-
-52. **Q:** Can you differentiate between an Oozie Workflow job and a Coordinator job? Provide an example of when you would use each.
-
-53. **Q:** Describe the lifecycle of an Oozie job. What are the typical states an Oozie job can be in, and what are the implications of each state?
-
-54. **Q:** How does Oozie support SLA (Service Level Agreement) monitoring, and why is it important in managing data processing jobs?
-
-55. **Q:** What are the main components of an Oozie Workflow job, and what is the role of each component?
+56. **Q:** What is Apache Oozie, and how does it facilitate job scheduling and workflow management in a Hadoop environment?
+57. **Q:** Can you differentiate between an Oozie Workflow job and a Coordinator job? Provide an example of when you would use each.
+58. **Q:** Describe the lifecycle of an Oozie job. What are the typical states an Oozie job can be in, and what are the implications of each state?
+59. **Q:** How does Oozie support SLA (Service Level Agreement) monitoring, and why is it important in managing data processing jobs?
+60. **Q:** What are the main components of an Oozie Workflow job, and what is the role of each component?

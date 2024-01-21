@@ -4,17 +4,17 @@
 ## Chapter 00: Foundations of Data Operations and Customer Engagement in the 883 Group
 
 In this chapter, the new team member will gain insights into the mission and strategic objectives of the group, engage with key customers, and grasp the fundamental data concepts pivotal to the unit.
-- **[Day 00](./on_boarding/newbie/chepter_00/day_00.md):** Welcome & Introduction -  Understand the onboarding process and the 883 Group's vision and mission :dart:
-- **[Day 01](./on_boarding/newbie/chepter_00/day_01.md)** Introduction to Big Data - Core Concepts 
-- **[Day 02](./on_boarding/newbie/chepter_00/day_02.md):** Customer Interaction and Insight into Data Operations & Data Lifecycle in the 883 Group
+- **[Day 00](./on_boarding/newbie/chapter_00/day_00.md):** Welcome & Introduction - Understand the onboarding process and the 883 Group's vision and mission :dart:
+- **[Day 01](./on_boarding/newbie/chapter_00/day_01.md)** Introduction to Big Data - Core Concepts 
+- **[Day 02](./on_boarding/newbie/chapter_00/day_02.md):** Customer Interaction and Insight into Data Operations & Data Lifecycle in the 883 Group
 :bow_and_arrow:
 
 
 ## Chapter 01: Introduction to Hadoop Ecosystem
-- **[Day 03](./on_boarding/newbie/chepter_01/day_03.md):**  Introduction to Data concept & Hadoop Ecosystem (Hadoop, HDFS, MapReduce, YARN, Hive):elephant:
-- **[Day 04](./on_boarding/newbie/chepter_01/day_04.md):**  Introduction to Data concept & Hadoop Ecosystem (HBase, Spark, Kafka, Impala, Partitioning, Kerberos, Oozie):elephant::elephant:
-- **[Final Exercise](./on_boarding/newbie/chepter_01/final_exercise_01.md):** Introduction to Data Ops Team and Hadoop Ecosystem concepts Q&A :question:
-- **[Showcase](./on_boarding/newbie/chepter_01/showcase/showcase01.md):** In-Depth Exploration of Hadoop Ecosystem Component(s) :book:
+- **[Day 03](./on_boarding/newbie/chapter_01/day_03.md):**  Introduction to Data concept & Hadoop Ecosystem (Hadoop, HDFS, MapReduce, YARN, Hive, ZooKeeper):elephant:
+- **[Day 04](./on_boarding/newbie/chapter_01/day_04.md):**  Introduction to Data concept & Hadoop Ecosystem (HBase, Spark, Kafka, Impala, Partitioning, Kerberos, Oozie):elephant::elephant:
+- **[Final Exercise](./on_boarding/newbie/chapter_01/final_exercise_01.md):** Introduction to Data Ops Team and Hadoop Ecosystem concepts Q&A :question:
+- **[Showcase](./on_boarding/newbie/chapter_01/showcase/showcase01.md):** In-Depth Exploration of Hadoop Ecosystem Component(s) :book:
 
 ## chapter 2: Proficiency in Spark
 
@@ -66,6 +66,7 @@ During the showcase, we will dive deeper into Airflow DAGs, discussing:
 ## chapter 02: Basic DevOps & Openshift
 - **Chapter 5:** Openshift Fundamentals for Data Ops using "zero to hero" Openshift labs.
 - **Chapter 6:** Helm for Kubernetes Package Management using "Hero to Master" Openshift labs.
+- **Chapter 7:** Openshift "Best Practises" labs by Orca.
 - **Exercise:** Deploy a Spark application using Helm on a Openshift cluster.
 - **Showcase:** Present the advantages of Kubernetes in a data ops context and discuss Helm's role in managing Kubernetes applications.
 

@@ -1,4 +1,4 @@
-## Day 02: Customer Interaction and Insight into Data Operations & Data Lifecycle in the 883 Group
+# Day 02: Customer Interaction and Insight into Data Operations & Data Lifecycle in the 883 Group
 
 Day 2 is dedicated to deepening your understanding of the essential components of data operations within the 883 Group. It's about exploring the intricacies of data pipelines and comprehending the journey of data from its inception to its transformation into actionable business insights. The focus is on recognizing the customer-centric approach of our data operations and realizing the pivotal role you play in aligning data-driven strategies with the group's business objectives.
 
